@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-    #Aqui carregamos uma imagem dentro de uma váriavel, importante notar que o arquivo deve estar no mesmo diretorio
+    #Aqui carregamos uma imagem dentro de uma váriavel, importante notar que o arquivo 't.jpg'  deve estar no mesmo diretorio
     # que o arquivo de execução
 img = cv2.imread('t.jpg')
     #abaixo criamos uma janela onde a imagem carregada será mostrada, e passamos como parametros o nome que daremos
