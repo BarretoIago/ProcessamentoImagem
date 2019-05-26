@@ -14,7 +14,8 @@ cv2.imshow('nomeDaTela',img)
 kernel = np.ones((6,6),np.float32)/25
 filter2D = cv2.filter2D(img,-1,kernel)
 blur = cv2.blur(img,(5,5))
-gaussianBlur = cv2.GaussianBlur(img,(555,555),0)
+    #importante mencionar que no filtro gaussianBlur, passamos apenas numeros iguais e  impares
+gaussianBlur = cv2.GaussianBlur(img,(61,61),0)
 median = cv2.medianBlur(img,9)
 bilateralFilter = cv2.bilateralFilter(img,9,75,75)
     #abaixo, para melhor analisarmos os resultados dos filtros, coloquei uma identificação em cada clone com seu
