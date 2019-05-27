@@ -1,7 +1,7 @@
 import cv2
 #no canal  HSV  hue : 0  - 180 , Saturation : 0 -255 , value : 255
 
-img  =  cv2.imread('t.jpg')
+img  =  cv2.imread('lena_std.tif')
 
 img_HSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 TEMP4 = img_HSV
