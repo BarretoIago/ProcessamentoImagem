@@ -1,2 +1,2 @@
 # ProcessamentoImagem
-Alguns códigos onde manípulo imagens com Python + openCv
+Alguns códigos onde trabalho imagens com Python + openCv
