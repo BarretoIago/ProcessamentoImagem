@@ -6,7 +6,7 @@ img = cv2.imread('lena_std.tif')
 ##e então podemos imprimir o valor RGB desse pixel.
 cv2. imshow('lena_std.tif',img)
 pix = img[500,510]
-print (Pix)
+print (pix)
 
 
 ##No codigo abaixo, é modificado o pixel 1-1 da matriz da imagem para o valor RGB 43, 239, 102, verde

@@ -2,7 +2,7 @@ import cv2
 import numpy as np
     #Aqui carregamos uma imagem dentro de uma váriavel, importante notar que o arquivo 't.jpg'  deve estar no mesmo diretorio
     # que o arquivo de execução
-img = cv2.imread('t.jpg')
+img = cv2.imread('lena_std.tif')
     #abaixo criamos uma janela onde a imagem carregada será mostrada, e passamos como parametros o nome que daremos
     #a janela e a variavel que contem a imagem. Por motivos de organização, comentar esta linha para não abrir duas
     #janelas.
@@ -20,13 +20,13 @@ median = cv2.medianBlur(img,9)
 bilateralFilter = cv2.bilateralFilter(img,9,75,75)
     #abaixo, para melhor analisarmos os resultados dos filtros, coloquei uma identificação em cada clone com seu
     #respectivo filtro
-font = cv2.FONT_HERSHEY_PLAIN
-cv2.putText(img,'Original Image',(5,50), font, 3, (255,0,0), 3, cv2.LINE_AA)
-cv2.putText(filter2D,'Filter 2D',(45,50), font, 3, (255,0,0), 3, cv2.LINE_AA)
-cv2.putText(blur,'Blur',(80,50), font, 3, (255,0,0), 3, cv2.LINE_AA)
-cv2.putText(gaussianBlur,'Gaussian Blur',(10,50), font, 3, (255,0,0), 3, cv2.LINE_AA)
-cv2.putText(median,'Median',(60,50), font, 3, (255,0,0), 3, cv2.LINE_AA)
-cv2.putText(bilateralFilter,'Bilateral Filter',(10,50), font, 3, (255,0,0), 3, cv2.LINE_AA)
+font = cv2.FONT_HERSHEY_DUPLEX 
+cv2.putText(img,'Original Image',(5,50), font, 0.5, (255,0,0), 1, cv2.LINE_AA)
+cv2.putText(filter2D,'Filter 2D',(45,50), font, 0.5, (255,0,0), 1, cv2.LINE_AA)
+cv2.putText(blur,'Blur',(80,50), font, 0.5, (255,0,0), 1, cv2.LINE_AA)
+cv2.putText(gaussianBlur,'Gaussian Blur',(10,50), font, 0.5, (255,0,0), 1, cv2.LINE_AA)
+cv2.putText(median,'Median',(60,50), font, 0.5, (255,0,0), 1, cv2.LINE_AA)
+cv2.putText(bilateralFilter,'Bilateral Filter',(10,50), font, 0.5, (255,0,0), 1, cv2.LINE_AA)
 #abaixo concateno a imagem para abrirmos apenas uma unica janela onde vemos todas as imagens lado-a-lado
 tempImage1 = np.concatenate((img, median, gaussianBlur), axis=1)
 tempImage2 = np.concatenate((bilateralFilter, blur, filter2D), axis=1)
