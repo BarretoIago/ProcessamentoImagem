@@ -6,7 +6,7 @@ img = cv2.imread('lena_std.tif')
     #abaixo criamos uma janela onde a imagem carregada será mostrada, e passamos como parametros o nome que daremos
     #a janela e a variavel que contem a imagem. Por motivos de organização, comentar esta linha para não abrir duas
     #janelas.
-cv2.imshow('nomeDaTela',img)
+cv2.imshow('Imagem Original',img)
  #################################
     #após carregarmos a imagem, podemos trata-la como alguns filtros, abaixo aplicamos alguns, importante
     #notar que cada filtro é carregado em uma imagem clonada.
@@ -35,7 +35,7 @@ finalImage = np.concatenate((tempImage1, tempImage2), axis=0)
     # então salvo uma copia da imagem no mesmo repositorio da original
 cv2.imwrite("image.png", finalImage)
     # aqui abrimos a imagem final concatenada em uma janela
-cv2.imshow("Final Image", finalImage)
+cv2.imshow("Imagem Concatenada com filtros", finalImage)
     #################################
 cv2.waitKey(0)
     #fecha todas as janelas ao fechar a imagem, caso existam mais imagens abertas
