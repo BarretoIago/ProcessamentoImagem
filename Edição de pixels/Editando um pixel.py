@@ -5,8 +5,6 @@ img = cv2.imread('lena_std.tif')
 numR= input("Digite um número para o tom RED:")
 numG= input("Digite um número para o tom GREEN:")
 numB= input("Digite um número para o tom BLUE:")
-def py as int
-def px as int
 
 py=input("Digite  a cordenada Y do pixel:")
 px=input("Digite  a cordenada X do pixel:")
