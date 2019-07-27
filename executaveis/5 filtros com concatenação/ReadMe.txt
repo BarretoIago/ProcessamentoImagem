@@ -7,7 +7,7 @@ nisso e evitar dor decabeça.
 OBS: antes de realizar o comando, certificar-se de estar no diretorio do setup.py e o script a ser convertido usando
 o comando cd no terminal.
 
-Após realizarmos a conversão, ultilzando o comando a seguir no terminal teremos a pasta build
+Após realizarmos a conversão, ultilzando o comando a seguir no terminal teremos a pasta build,
 onde teremos nosso executável.
 	
 	python concat.py build -f
